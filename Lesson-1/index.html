@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- Required meta tags -->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+	<title>JavaScript Lesson-1</title>
+</head>
+<body>
+<div class="container">
+	<h1 class="h1">JavaScript Lesson-1</h1>
+	<p class="mb-4">1. Задать температуру в градусах по Цельсию. Вывести в alert соответствующую температуру в градусах по Фаренгейту. Подсказка: расчёт идёт по формуле: Tf = (9 / 5) * Tc + 32, где Tf – температура по Фаренгейту, Tc – температура по Цельсию</p>
+	<label for="inputCelsium" class="form-label">Температура в Цельсиях</label>
+	<input type="number" id="inputCelsium" class="form-control" aria-describedby="inputCelsiumHelpBlock" value="0">
+	<div id="inputCelsiumHelpBlock" class="form-text">Введите температуру в градусах Цельсия</div>
+	<div class="fahrenheit-alert alert alert-info alert-dismissible fade show mt-3 mb4" role="alert">
+		<strong>Температура в Фаренгейтах: </strong><span class="fahrenheit-temperature">32 ℉</span>
+	</div>
+	<p class="mb-4">2. Работа с переменными. - не понял что от меня надо, да и наработался уже... думаю это понятно по скрипту.</p>
+	<p class="mb-4">3. Объявить две переменные: admin и name. Записать в name строку "Василий"; Скопировать значение из name в admin. Вывести admin (должно вывести «Василий»).</p>
+	<div class="alert alert-secondary mb-4" role="alert">Переменная admin равна <span class="task3-result"></span></div>
+	<p class="mb-4">4. *Чему будет равно JS-выражение 1000 + "108"/</p>
+	<div class="alert alert-success mb-4" role="alert" data-task="3"></div>
+	<p class="mb-4">5. *Самостоятельно разобраться с атрибутами тега script (async и defer)/ - разобрался, defer откладывает загрузку скрипта до окончания построения DOM модели, а async без остановки загрузки страницы начинает параллельно загружать скрипт с таким атрибутом, но горе нам если slick c таким атрибутом уже загрузился, а jQuery с таким-же еще нет...</p>
+</div>
+
+<script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script defer src="./main.js"></script>
+
+</body>
+</html>
