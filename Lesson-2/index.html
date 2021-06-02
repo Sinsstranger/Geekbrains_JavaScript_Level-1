@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- Required meta tags -->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+	<title>JavaScript Lesson-2</title>
+</head>
+<body>
+<div class="container">
+	<h1 class="h1">JavaScript Lesson-2</h1>
+	<h3 class="h3 mb-3">JavaScript Lesson-2</h3>
+	<p class="mb-3"><strong>1.</strong> Почему код даёт именно такие результаты?</p>
+	<pre class="mb-3"><code>
+		var a = 1, b = 1, c, d;
+		c = ++a; alert(c);           // 2 | префиксный инкремент увеличит a на единицу, затем присвоит в переменную, а потом вывалит alert
+		d = b++; alert(d);           // 1 | присвоит в переменную d значение b ,
+														затем постфиксный инкремент увеличит b на единицу, а потом вывалит alert
+		c = (2+ ++a); alert(c);      // 5 | к 2 приплюсуется увеличенное префиксным инкрементом значение a и ляжет в c - потом вывалит alert
+		d = (2+ b++); alert(d);      // 4 | к 2 приплюсуется текущее значение b, затем b инкрементируется - потом вывалит alert
+		alert(a);                    // 3 | --//--
+		alert(b);                    // 3 | показ a и b в этой и предидущей строке с учетом всех инкрементов
+  </code></pre>
+	<p class="mb-3"><strong>2. </strong>Чему будет равен x в примере ниже?</p>
+	<pre><code>
+		var a = 2;
+		var x = 1 + (a *= 2);
+	</code></pre>
+	<p class="mb-3"><strong>Ответ: </strong> 5</p>
+	<p><strong>3.</strong> Объявить две целочисленные переменные a и b и задать им произвольные начальные значения. Затем написать скрипт, который работает по следующему принципу:</p>
+	<p>если a и b положительные, вывести их разность;</p>
+	<p>если а и b отрицательные, вывести их произведение;</p>
+	<p class="mb-3">если а и b разных знаков, вывести их сумму; ноль можно считать положительным числом.</p>
+	<p class="mb-3"><strong>### 4.</strong> Присвоить переменной а значение в промежутке [0..15]. С помощью оператора switch организовать вывод чисел от a до 15.</p>
+	<p class="mb-3"><strong>### 5.</strong> Реализовать основные 4 арифметические операции в виде функций с двумя параметрами. Обязательно использовать оператор return.</p>
+	<div class="fahrenheit-alert alert alert-info alert-dismissible fade show mt-3 mb4" role="alert">
+		Данная задача поглощает задачу 6 и расширена до трех параметров, так как задача 6 избыточная и с тупым ТЗ
+	</div>
+	<p class="mb-3"><strong>### 6.</strong> Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation), где arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от переданного значения операции выполнить одну из арифметических операций (использовать функции из пункта 3) и вернуть полученное значение (использовать switch). </p>
+	<p class="mb-3"><strong>### 7.</strong> *Сравнить null и 0. Попробуйте объяснить результат.</p>
+	<pre>
+		<code>
+			console.log(null == 0);
+			console.log(null === 0);
+		</code>
+	</pre>
+	<p class="mt-2 mb-3">В обоих случаях false так как 0 - это в любом случае число или '0' - строка (<code>console.log("0" == 0)</code> - true), а null - особое значениме подразумевающее пустоту или ничто.</p>
+	<p><strong>### 8.</strong> *С помощью рекурсии организовать функцию возведения числа в степень. Формат: function power(val, pow), где val – заданное число, pow – степень.</p>
+</div>
+
+<script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script defer src="./main.js"></script>
+
+</body>
+</html>
