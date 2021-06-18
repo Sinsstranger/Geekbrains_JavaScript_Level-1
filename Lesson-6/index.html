@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson-6</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+	<div class="container-fluid">
+		<a class="navbar-brand">Lesson-6</a>
+		<div class="mini-cart">
+			<div class="mini-cart__info"><i class="fas fa-shopping-cart"></i></div>
+			<div class="mini-cart__detail">
+				<div class="mini-cart__items"></div>
+				<div class="mini-cart__footer">В корзине <span class="mini-cart__count">0</span> элементов на сумму <span class="mini-cart__summ">0</span> тугриков</div>
+			</div>
+		</div>
+	</div>
+</nav>
+<div class="container">
+	<div class="row justify-content-evenly">
+		<div class="card d-flex flex-row mb-2">
+			<div class="card__preview col-4 d-flex flex-column align-items-center">
+				<img src="https://cdn1.ozone.ru/s3/multimedia-v/wc200/6058893151.jpg" alt="#" class="card__image"/>
+				<div class="card__gallery">
+					<img src="https://cdn1.ozone.ru/s3/multimedia-v/wc200/6058893151.jpg" alt="#" class="gallery-image"/>
+					<img src="https://cdn1.ozone.ru/s3/multimedia-4/wc250/6020425648.jpg" alt="#" class="gallery-image"/>
+					<img src="https://cdn1.ozone.ru/s3/multimedia-a/wc250/6041291938.jpg" alt="#" class="gallery-image"/>
+				</div>
+			</div>
+			<div class="card-body col">
+				<h5 class="card-title">Товар 1</h5>
+				<p class="card-text">Нужный товар 1</p>
+				<p>Стоит <span class="price">350</span> тугриков</p>
+				<a href="#" class="btn btn-primary buy-now">Прикупить</a>
+			</div>
+		</div>
+		<div class="card d-flex flex-row mb-2">
+			<div class="card__preview col-4 d-flex flex-column align-items-center">
+				<img src="https://cdn1.ozone.ru/s3/rp-photo-3/wc1200/4f6d1cb4-b785-4977-af4f-e7a1c0248193.jpeg" alt="#" class="card__image"/>
+				<div class="card__gallery">
+					<img src="https://cdn1.ozone.ru/s3/rp-photo-3/wc1200/4f6d1cb4-b785-4977-af4f-e7a1c0248193.jpeg" alt="#" class="gallery-image"/>
+					<img src="https://cdn1.ozone.ru/s3/rp-photo-4/wc1200/602c3aac-1fc0-4ef5-9429-f095f3fdeffa.jpeg" alt="#" class="gallery-image"/>
+					<img src="https://cdn1.ozone.ru/s3/rp-photo-4/wc1200/602c3aac-1fc0-4ef5-9429-f095f3fdeffa.jpeg" alt="#" class="gallery-image"/>
+				</div>
+			</div>
+			<div class="card-body col">
+				<h5 class="card-title">Товар 2</h5>
+				<p class="card-text">Нужный товар 2</p>
+				<p>Стоит <span class="price">450</span> тугриков</p>
+				<a href="#" class="btn btn-primary buy-now">Прикупить</a>
+			</div>
+		</div>
+		<div class="card d-flex flex-row mb-2">
+			<div class="card__preview col-4 d-flex flex-column align-items-center">
+				<img src="https://cdn1.ozone.ru/s3/multimedia-6/wc1200/6024796914.jpg" alt="#" class="card__image"/>
+				<div class="card__gallery">
+					<img src="https://cdn1.ozone.ru/s3/multimedia-6/wc1200/6024796914.jpg" alt="#" class="gallery-image"/>
+					<img src="https://cdn1.ozone.ru/s3/multimedia-r/wc1200/6024796899.jpg" alt="#" class="gallery-image"/>
+					<img src="https://cdn1.ozone.ru/s3/multimedia-o/wc1200/6027153996.jpg" alt="#" class="gallery-image"/>
+				</div>
+			</div>
+			<div class="card-body col">
+				<h5 class="card-title">Товар 3</h5>
+				<p class="card-text">Нужный товар 3</p>
+				<p>Стоит <span class="price">550</span> тугриков</p>
+				<a href="#" class="btn btn-primary buy-now">Прикупить</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- MODALS-->
+<div class="modal-wrapper hide">
+	<div class="modal__close"><i class="fas fa-times"></i></div>
+	<div class="modal-inner">
+		<div class="modal__prev"><i class="fas fa-chevron-left"></i></div>
+		<div class="modal__content"></div>
+		<div class="modal__next"><i class="fas fa-chevron-right"></i></div>
+	</div>
+</div>
+<!-- Bootstrap Bundle with Popper -->
+<script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<!-- Fontawesome Kit -->
+<script defer src="https://kit.fontawesome.com/d819c0a384.js" crossorigin="anonymous"></script>
+<!-- Custom Styles -->
+<script defer src="js/main.js"></script>
+</body>
+</html>

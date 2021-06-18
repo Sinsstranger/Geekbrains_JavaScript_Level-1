@@ -1,0 +1,111 @@
+.card__image, .gallery-image {
+    display: block;
+}
+
+.card__image {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+}
+
+.card__gallery {
+    display: flex;
+}
+
+.gallery-image {
+    max-width: 30%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.slider-image {
+    display: none;
+}
+
+.slider-image.active {
+    display: block;
+}
+
+.modal-inner {
+    display: inherit;
+    align-items: center;
+}
+
+.modal-wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(179, 173, 173, 0.4);
+    position: fixed;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.modal-wrapper.hide {
+    display: none;
+}
+
+.modal__close {
+    align-self: flex-start;
+    flex-basis: 100%;
+    display: inherit;
+    justify-content: flex-end;
+    font-size: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.modal__prev,
+.modal__next {
+    font-size: 3em;
+}
+
+.mini-cart {
+    position: relative;
+}
+
+.mini-cart__info {
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.mini-cart__detail {
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    content: '';
+}
+.mini-cart__footer{
+
+}
+.mini-cart__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-width: 270px;
+}
+
+.mini-cart__cross {
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.mini-cart__props {
+    display: inherit;
+    align-self: stretch;
+}
+
+.mini-cart__image {
+    flex: 0 0 75px;
+    max-width: 75px;
+    object-fit: contain;
+}
+
+.mini-cart__caption {
+    flex-grow: 1;
+
+}
