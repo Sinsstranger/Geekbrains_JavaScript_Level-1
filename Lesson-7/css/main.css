@@ -1,0 +1,43 @@
+.header{
+    max-width: 100vw;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.mini-cart {
+    padding: .5rem 0;
+    max-height: 2.7em;
+    display: flex;
+    flex-direction: column;
+}
+
+.mini-cart__icon {
+    font-size: 1.5em;
+    color: #fff;
+    align-self: flex-end;
+}
+.mini-cart__info{
+    color: #000;
+    background: #fff;
+    border: 1px solid #000;
+    z-index: 1;
+    transform: translateY(.4em);
+    padding: .2em .5em;
+}
+.mini-cart__items {
+}
+.mini-cart__item{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid lightgray;
+}
+.mini-cart__close{
+    align-self: flex-end;
+}
+.mini-cart__description{
+    display: inherit;
+
+}
+.mini-cart__epilog{
+    padding: .5em 0;
+}
